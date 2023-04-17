@@ -1,19 +1,11 @@
-public class Salida {
-    static void escribir() throws IOException {
-        byte CR = 13;
-        byte LF = 10;
+package org.example;
 
-        try {
-            FileOutputStream fos = new FileOutputStream("C:\\Users\\damci\\IdeaProjects\\ficheros\\fich1.bin");
-            fos.write((byte)'a');
-            fos.write((byte)'e');
-            fos.write((byte)'i');
-            fos.write(CR);
-            fos.write(LF);
-            fos.close();
+public class Main {
+    public static void main(String[] args) {
 
-        } catch (IOException ex) {
-            System.out.println("ioe");
-        }
+
+        Salida s1 = new Salida();
+        System.out.println("Procesando");
+
     }
-        }
+}
